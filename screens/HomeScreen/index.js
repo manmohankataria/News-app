@@ -16,7 +16,7 @@ export default class HomeScreen extends Component {
     getArticles() {
         axios
           .get(
-            "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=818cf22de23742e3a33511dd0635a38e"
+            "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=818cf22de23742e3a33511dd0635a38e"
           )
           .then(response =>
             response.data.articles.map(article => ({
